@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- styles-->
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Waska.pe</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm header fixed-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="img/waska_logo.jpeg" alt="logo">
+                </a>
+    
+                <!-- Boton para el menu movil -->
+                <button 
+                    class="navbar-toggler btn-outline-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Mostrar / Ocultar Menu"
+                >
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+    
+                <!-- Menu de navegacion -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                        <li class="nav-item"><a href="login.html" class="nav-link" id="login">Login <i class="fas fa-user-plus"></i></a> </li>
+                        <li class="nav-item"><a href="index.html" class="nav-link ">Inicio</a></li>
+    
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a 
+                                href="#" 
+                                class="nav-link dropdown-toggle"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                id="dropdown-menu"
+                            >
+                                Categorias
+                            </a>
+    
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Cervezas</a></li>
+                                <li><a href="#" class="dropdown-item">Piscos</a></li>
+                                <li><a href="#" class="dropdown-item">Rones</a></li>
+                                <li><a href="#" class="dropdown-item">Whiskys</a></li>
+                                <li><a href="#" class="dropdown-item">Vinos</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item"><a href="receta.html" class="nav-link">Recetas</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contactanos</a></li>
+                        
+                    </ul>
+                    
+                    <form action="" class="d-flex">
+                        <input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="button">Buscar</button>
+                    </form>
+                   
+                </div>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <section class="container secion_img ">
+        <div class="row">
+            <div class="col">
+                <div class="carousel slide carousel-fade " id="mi-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- imagenes del carousel-->
+                        <div class="carousel-item active imagen ">
+                                <div class="carousel-caption primary">
+                                    <h3>En WASKA tenemos todos los tragos que
+                                        imagines y los que no.
+                                    </h3>
+                                </div>
+                            <img src="img/carousel_1.jpg" alt="" class="img-fluid" >
+                        </div>
+
+                        <div class="carousel-item imagen" data-bs-interval="1000"> 
+                            <div class="carousel-caption primary">
+                                <h3>En la sección de recetas puedes encontrar las
+                                    mejores combinaciones con nuestros productos.
+                                </h3>
+                            </div>
+                            <img src="img/carousel_2.jpg"  alt="" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item imagen" data-bs-interval="1000">
+                            
+                             
+                            <img src="img/carousel_3.jpg"  alt="" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item imagen" data-bs-interval="1000"> 
+                            <div class="carousel-caption ">
+                                <h3>No interrumpas la juerga y pide nuestro delivery.
+                                </h3>
+                            </div>
+                            <img src="img/carousel_4.jpg"  alt="" class="img-fluid">
+                        </div>
+
+                    </div> <!--  fin del carousel inner-->
+                    
+                    <!-- controles-->
+                    <button
+                        class="carousel-control-prev"
+                        type= "button"
+                        data-bs-target="#mi-carousel"
+                        data-bs-slide="prev"
+                    >
+                        
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <!--para ciegos-->
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <!-- boton de siguiente-->
+                    <button
+                        class="carousel-control-next"
+                        type= "button"
+                        data-bs-target="#mi-carousel"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <!--para ciegos-->
+                        <span class="visually-hidden">Siguiente</span>
+
+                    </button>
+
+                    <!--indicadores-->
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            class="active"
+                            data-bs-target="#mi-carousel"
+                            data-bs-slide-to="0"
+                            aria-label="slide 1"
+                        >
+
+                        </button>
+                        <button
+                            type="button"
+                            class=""
+                            data-bs-target="#mi-carousel"
+                            data-bs-slide-to="1"
+                            aria-label="slide 2"
+                        >
+                        </button>
+                        <button
+                            type="button"
+                            class=""
+                            data-bs-target="#mi-carousel"
+                            data-bs-slide-to="2"
+                            aria-label="slide 3"
+                        >
+                        </button>
+                        <button
+                            type="button"
+                            class=""
+                            data-bs-target="#mi-carousel"
+                            data-bs-slide-to="3"
+                            aria-label="slide 4"
+                        >
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion de  catalogo de productos -->
+    <section class="conteiner prod pisco">
+        <div class="row container catalogo">
+            
+                <!--recuadro del producto-->
+                <div class="col my-2 producto " >
+                    <div class="card border-dark shadow">
+                        <div class="card-header"> Pisco Ocucaje </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pisco Ocucaje-Italia-700 ml</h5>
+                            <img src="img/tragos/pisco/ocucajeItalia.jpg" alt="" class="card-image">
+                                
+                                <p class="precio">s/. 30.00 </p>
+                                <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                <p class="precio-oferta"> s/. 25.00</p>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                </div>
+        
+
+                        </div>
+                    </div>
+                </div>
+                <!--recuadro del producto-->
+                <div class="col my-2 producto" >
+                    <div class="card border-dark shadow">
+                        <div class="card-header"> Pisco Ocucaje </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pisco Ocucaje-Acholado-700 ml</h5>
+                            <img src="img/tragos/pisco/ocucajeAcholado.jpg" alt="" class="card-image">
+                                
+                                <p class="precio">s/. 30.00 </p>
+                                <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                <p class="precio-oferta">s/. 25.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--recuadro del producto-->
+                <div class="col my-2 producto" >
+                    <div class="card border-dark shadow">
+                        <div class="card-header"> Pisco Ocucaje </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pisco Ocucaje-Quebranta-700 ml</h5>
+                            <img src="img/tragos/pisco/ocucajeQuebranta.jpg" alt="" class="card-image">
+                                
+                                <p class="precio">s/. 30.00 </p>
+                                <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                <p class="precio-oferta">s/. 25.00</p>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                </div>
+    
+                        </div>
+                    </div>
+                </div>
+                        
+        </div>
+        <!--queirolo-->
+        <div class="row container">
+             <!--recuadro del producto-->
+             <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Pisco Queirolo </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pisco Queirolo-Italia-750 ml</h5>
+                        <img src="img/tragos/pisco/queiroloItalia.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 28.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 24.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Pisco Queirolo </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pisco Queirolo-Quebranta-750 ml</h5>
+                        <img src="img/tragos/pisco/queiroloQuebranta.png" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 28.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 24.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Pisco Queirolo </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pisco Queirolo-Acholado-750 ml</h5>
+                        <img src="img/tragos/pisco/queiroloAcholado.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 28.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 24.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row container">
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Pisco Biondi </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pisco Biondi-Italia-700 ml</h5>
+                        <img src="img/tragos/pisco/biondiItalia.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 55.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 50.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Pisco Biondi </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pisco-Biondi-Mosto verde-700 ml</h5>
+                        <img src="img/tragos/pisco/biondiMosto.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 65.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 60.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Pisco Tabernero </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pisco-Botija-Acholado-750 ml</h5>
+                        <img src="img/tragos/pisco/taberneroBotija.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 30.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 25.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+
+    </section>
+
+    <!--  seccion de cervezas-->
+    <section class="container prod cerveza">
+        <div class="row container">
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Cerveza Cusqueña </div>
+                    <div class="card-body">
+                        <h5 class="card-title">6 Pack - Cerveza Cusqueña 330ml - lager</h5>
+                        <img src="img/tragos/cerveza/cerveza-cusquena-dorada-six-pack.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 20.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 18.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Cerveza Cusqueña </div>
+                    <div class="card-body">
+                        <h5 class="card-title">6 Pack - Cerveza Cusqueña 330ml - trigo</h5>
+                        <img src="img/tragos/cerveza/cusqueña-trigo-sixpack.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 20.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 18.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Cerveza Cusqueña </div>
+                    <div class="card-body">
+                        <h5 class="card-title">6 Pack - Cerveza Cusqueña 330ml - negra</h5>
+                        <img src="img/tragos/cerveza/cusqueña-malta-sixpack.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 20.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 18.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>    
+            </div>
+
+        </div>
+        <div class="row container">
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Cerveza Cusqueña </div>
+                    <div class="card-body">
+                        <h5 class="card-title">12 Pack- Cerveza Cusqueña 330ml - lager lata</h5>
+                        <img src="img/tragos/cerveza/cusqueña-12pack.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 45.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 40.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Cerveza Cusqueña </div>
+                    <div class="card-body">
+                        <h5 class="card-title">12 Pack- Cerveza Cusqueña 330ml - trigo lata</h5>
+                        <img src="img/tragos/cerveza/cusqueña-trigo-12pack.jpg" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 45.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 40.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>    
+            </div>
+
+
+            <div class="col my-2 producto" >
+                <div class="card border-dark shadow">
+                    <div class="card-header"> Cerveza Pilse </div>
+                    <div class="card-body">
+                        <h5 class="card-title">6 Pack- Pilsen 330ml - lata</h5>
+                        <img src="img/tragos/cerveza/pilsen-sixpack.png" alt="" class="card-image">
+                            
+                            <p class="precio">s/. 20.00 </p>
+                            <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                            <p class="precio-oferta">s/. 18.00</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!--                     prubeas                -->
+    <div class="row">
+        <div class="col"> 
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Pisco #1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">cerveza #2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ron #3</a>
+                        </li>
+                    </ul>
+                    <div class="card-body row">
+                        <h5 class="card-title ">Piscos</h5>
+                        <div class="col my-2 producto" >
+                            <div class="card border-dark shadow">
+                                <div class="card-header"> Pisco Ocucaje </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pisco Ocucaje-Acholado-700 ml</h5>
+                                    <img src="img/tragos/pisco/ocucajeAcholado.jpg" alt="" class="card-image">
+                                        
+                                        <p class="precio">s/. 30.00 </p>
+                                        <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                        <p class="precio-oferta">s/. 25.00</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2 producto" >
+                            <div class="card border-dark shadow">
+                                <div class="card-header"> Pisco Ocucaje </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pisco Ocucaje-Acholado-700 ml</h5>
+                                    <img src="img/tragos/pisco/ocucajeAcholado.jpg" alt="" class="card-image">
+                                        
+                                        <p class="precio">s/. 30.00 </p>
+                                        <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                        <p class="precio-oferta">s/. 25.00</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2 producto" >
+                            <div class="card border-dark shadow">
+                                <div class="card-header"> Pisco Ocucaje </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pisco Ocucaje-Acholado-700 ml</h5>
+                                    <img src="img/tragos/pisco/ocucajeAcholado.jpg" alt="" class="card-image">
+                                        
+                                        <p class="precio">s/. 30.00 </p>
+                                        <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                        <p class="precio-oferta">s/. 25.00</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> 
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--        final de las    pruebas       -->
+    
+
+    <footer class="site-footer">
+        <div>
+            <nav class="navbar navbar-expand-lg footer fixed-bottom">
+                <div class="container-fluid">
+    
+                    <h2 class="titulo-footer">WASKA.PE</h2>
+                    <!-- Boton para el menu movil -->
+                    <button 
+                        class="navbar-toggler btn-outline-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuf"
+                        aria-controls="menuf"
+                        aria-expanded="false"
+                        aria-label="Mostrar / Ocultar Menu"
+                    >
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+        
+                    <!-- Menu de navegacion -->
+                    <div class="collapse navbar-collapse" id="menuf">
+                        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                            <li class="nav-item"><a href="#" class="nav-link foo">Inicio</a></li>
+        
+                            <!-- Dropdown -->
+                            <li class="nav-item dropup">
+                                <a 
+                                    href="#" 
+                                    class="nav-link dropdown-toggle foo"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    id="dropdown-menu"
+                                >
+                                    Categorias
+                                </a>
+        
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Cervezas</a></li>
+                                    <li><a href="#" class="dropdown-item">Piscos</a></li>
+                                    <li><a href="#" class="dropdown-item">Rones</a></li>
+                                    <li><a href="#" class="dropdown-item">Whiskys</a></li>
+                                    <li><a href="#" class="dropdown-item">Vinos</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="nav-item"><a href="#" class="nav-link foo">Recetas</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link foo">Contactanos</a></li>
+                            
+                        </ul>
+        </div>
+
+      
+            
+    </footer>
+    <div class="rights fixed-bottom">
+        <p>  <i class="fas fa-code"></i> with <i class="fas fa-heartbeat"></i> by WhiteHack - <i class="far fa-copyright"></i> Derechos reservados</p>
+    </div>
+    
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/0b0cc5ebda.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

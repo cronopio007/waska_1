@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>EL alquimista</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row  header ">
+                <div class="col-md-1 columna-1 ">
+                </div>
+
+
+                <div class="col-md-6 columna-2 ">
+                    <nav class="nav ">
+
+                        <ul class="d-md-flex  justify-content-center">
+                            <div class=" align-items-center mt-2 headerTop "><a href="#" class="nav-link ">Inicio</a></div>
+                            <div class="    mt-2 headerTop "><a href="#" class="nav-link ">Productos</a></div>
+                            <div class="  mt-2 headerTop "><a href="#" class="nav-link">Contactanos</a></div>
+                            <div class="  mt-2 headerTop"><a href="#" class="nav-link">recetas</a></div>                          
+                        </ul>                               
+                    </nav>
+                </div>
+
+
+                <div class="col-md-5 columna-3   row" >
+
+                    <div class="div-buscar ms-1 col-md">
+                        <label for="buscar-nav">Buscar</label>
+                        <input type="text" class="searchbox" id="buscar-nav">
+
+                    </div>
+                    
+
+                    <div class="login-box login col-md mt-4 ">
+                        <a href="#">Login <i class="fas fa-user-plus"></i></a>                        
+                    </div>
+                </div>
+            </div>           
+        </div>
+
+    </header>
+
+    <!--   vista de cartas    -->
+
+    <div class="row">
+        <div class="col"> 
+            <div class="card ">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs " id="contenido">
+                        <li class="nav-item ">
+                            
+                            
+                             <a href="#" class="nav-link active " id="pisco">Pisco #1</a> 
+
+                        </li>
+                        <li class="nav-item">
+                            
+                            <a href="#" class="nav-link" id="cerveza">cerveza #2</a>  
+                        </li>
+                        <li class="nav-item">
+                        
+                           <a href="#" class="nav-link" id="ron">ron #3</a> 
+                        </li>
+                    </ul>
+                    <div class="card-body row">
+                        <h5 class="card-title ">Piscos</h5>
+                        <div class="col my-2 producto" >
+                            <div class="card border-dark shadow">
+                                <div class="card-header"> Pisco Ocucaje </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pisco Ocucaje-Acholado-700 ml</h5>
+                                    <img src="img/tragos/pisco/ocucajeAcholado.jpg" alt="" class="card-image">
+                                        
+                                        <p class="precio">s/. 30.00 </p>
+                                        <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                        <p class="precio-oferta">s/. 25.00</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2 producto" >
+                            <div class="card border-dark shadow">
+                                <div class="card-header"> Pisco Ocucaje </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pisco Ocucaje-Acholado-700 ml</h5>
+                                    <img src="img/tragos/pisco/ocucajeAcholado.jpg" alt="" class="card-image">
+                                        
+                                        <p class="precio">s/. 30.00 </p>
+                                        <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                        <p class="precio-oferta">s/. 25.00</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2 producto" >
+                            <div class="card border-dark shadow">
+                                <div class="card-header"> Pisco Ocucaje </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pisco Ocucaje-Acholado-700 ml</h5>
+                                    <img src="img/tragos/pisco/ocucajeAcholado.jpg" alt="" class="card-image">
+                                        
+                                        <p class="precio">s/. 30.00 </p>
+                                        <p class="desc_precio_oferta">PRECIO OFERTA </p>
+                                        <p class="precio-oferta">s/. 25.00</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> 
+
+        </div>
+
+    </div>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/0b0cc5ebda.js" crossorigin="anonymous"></script>
+
+    <script>
+        //https://www.w3schools.com/howto/howto_js_active_element.asp
+       /* const pisco = document.querySelector('#pisco');
+        const cerveza = document.querySelector('#cerveza');
+        const ron = document.querySelector('#ron');
+
+        // declarar la funcion q respondera al click
+        pisco.addEventListener('click', function (){
+            pisco.classList.add('active');
+        });
+        cerveza.addEventListener('click', function (){
+            cerveza.classList.add('active');
+        });
+        */
+
+/* // Get the container element
+    var btnContainer = document.getElementById("myDIV");
+
+// Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+} */
+    var btnContainer = document.getElementById("contenido");
+    var btns = document.querySelectorAll('li.nav-item a.nav-link');
+
+        console.log(btns);
+        console.log(btnContainer);
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+         });
+        }
+    </script>
+    
+</body>
+</html>

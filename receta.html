@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- styles-->
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Waska-recetario</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm header fixed-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="img/waska_log.png" alt="logo">
+                </a>
+    
+                <!-- Boton para el menu movil -->
+                <button 
+                    class="navbar-toggler btn-outline-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Mostrar / Ocultar Menu"
+                >
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+    
+                <!-- Menu de navegacion -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                        <li class="nav-item"><a href="login.html" class="nav-link" id="login">Login <i class="fas fa-user-plus"></i></a> </li>
+                        <li class="nav-item"><a href="index.html" class="nav-link ">Inicio</a></li>
+    
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a 
+                                href="#" 
+                                class="nav-link dropdown-toggle"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                id="dropdown-menu"
+                            >
+                                Categorias
+                            </a>
+    
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Cervezas</a></li>
+                                <li><a href="#" class="dropdown-item">Piscos</a></li>
+                                <li><a href="#" class="dropdown-item">Rones</a></li>
+                                <li><a href="#" class="dropdown-item">Whiskys</a></li>
+                                <li><a href="#" class="dropdown-item">Vinos</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item"><a href="receta.html" class="nav-link">Recetas</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contactanos</a></li>
+                        
+                    </ul>
+                    
+                    <form action="" class="d-flex">
+                        <input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="button">Buscar</button>
+                    </form>
+                   
+                </div>
+            </div>
+
+        </nav>
+
+    </header>  
+    
+    <div class="container-fluid cuerpo">
+        <div class="row ">
+            <aside class="sidebar col-3 barra-lateral shadow-lg ">
+                <div class="row">
+                    <div class="contenido-sidebar col-10">
+                        <p id=titulo-sidebar>Recetas</p>
+                        <nav class="navbar-receta ">
+                            <ul>
+                                <p class="titulo-receta">Bebidas con pisco</p>
+                                <li>
+                                    <a href="#coctel_1" class="nav-link lista" >Pisco sour</a>
+                                </li>
+                                <li>
+                                    <a href="#coctel_2" class="nav-link lista">coctel_2</a>
+                                </li>
+                                <li>
+                                    <a href="#coctel_3" class="nav-link lista">coctel_3</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link lista">Pisco sour</a>
+                                </li>
+    
+                                <p class="titulo-receta">Bedidas con Ron</p>
+                                <li>
+                                    <a href="" class="nav-link lista">Cuba libre</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link lista">Cuba libre</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link lista">Cuba libre</a>
+                                </li>
+    
+                                <p class="titulo-receta">Bebidas con Whisky </p>
+                                <li>
+                                    <a href="" class="nav-link lista">Mint Julep</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link lista">Café irlandes</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link lista">Old fashioned</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link lista">Manhattan</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link lista">Whisky sour</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="costado col-2">
+                        <button class="side-receta btn ">Recetas
+    
+                        </button>
+                    </div>
+                </div>
+                
+                
+               
+            </aside>
+
+            <main class="main col">
+               <div class="container d-flex  flex-column">
+                   <!-- contenedor de cada receta-->
+                    <div class="div-receta col">
+                        <div class="">
+                            <h3 id="coctel_1">Pisco Sour</h3>
+                            
+                            <img src="img/coctel/piscoSour.jpg" class="img-fluid img-coctel" alt="">
+                        </div>
+
+                        <div class="d-flex flex-column descripcion-receta" >
+                            <div class="ingredientes">
+                                <ol>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                </ol>
+                            </div>
+                            
+
+                            <div class="preparacion">
+                                <p>lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                </p>
+                            </div>
+                            
+                        </div>                      
+                  </div>
+<!-- segundo coctel-->
+                   <div class="div-receta col">
+                        <div class="">
+                            <h3 id="coctel_2">Pisco Sour</h3>
+                            
+                            <img src="img/coctel/img1.jpg" class="img-fluid img-coctel" alt="">
+                        </div>
+
+                        <div class="d-flex flex-column descripcion-receta" >
+                            <div class="ingredientes">
+                                <ol>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                </ol>
+                            </div>
+                            
+
+                            <div class="preparacion">
+                                <p>lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                </p>
+                            </div>
+                            
+                        </div>                      
+                  </div>
+
+<!-- tercer coctel-->
+                    <div class="div-receta col">
+                        <div class="">
+                            <h3 id="coctel_3">Pisco Sour</h3>
+                            
+                            <img src="img/coctel/img2.jpg" class="img-fluid img-coctel" alt="">
+                        </div>
+
+                        <div class="d-flex flex-column descripcion-receta" >
+                            <div class="ingredientes">
+                                <ol>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                    <li>ingrediente </li>
+                                </ol>
+                            </div>
+                            
+
+                            <div class="preparacion">
+                                <p>lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                    lorem ipsum dolor sit amet, consectetur adip
+                                </p>
+                            </div>
+                            
+                        </div>                      
+                  </div>
+
+
+               </div>
+               
+            </main>
+
+        </div>
+
+    </div>
+
+    
+
+
+
+    <footer class="site-footer">
+        <div>
+            <nav class="navbar navbar-expand-lg footer fixed-bottom">
+                <div class="container-fluid">
+    
+                    <h2 class="titulo-footer">WASKA.PE</h2>
+                    <!-- Boton para el menu movil -->
+                    <button 
+                        class="navbar-toggler btn-outline-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuf"
+                        aria-controls="menuf"
+                        aria-expanded="false"
+                        aria-label="Mostrar / Ocultar Menu"
+                    >
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+        
+                    <!-- Menu de navegacion -->
+                    <div class="collapse navbar-collapse" id="menuf">
+                        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                            <li class="nav-item"><a href="#" class="nav-link foo">Inicio</a></li>
+        
+                            <!-- Dropdown -->
+                            <li class="nav-item dropup">
+                                <a 
+                                    href="#" 
+                                    class="nav-link dropdown-toggle foo"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    id="dropdown-menu"
+                                >
+                                    Categorias
+                                </a>
+        
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Cervezas</a></li>
+                                    <li><a href="#" class="dropdown-item">Piscos</a></li>
+                                    <li><a href="#" class="dropdown-item">Rones</a></li>
+                                    <li><a href="#" class="dropdown-item">Whiskys</a></li>
+                                    <li><a href="#" class="dropdown-item">Vinos</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="nav-item"><a href="#" class="nav-link foo">Recetas</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link foo">Contactanos</a></li>
+                            
+                        </ul>
+        </div>
+
+      
+            
+    </footer>
+    <div class="rights fixed-bottom">
+        <p>  <i class="fas fa-code"></i> with <i class="fas fa-heartbeat"></i> by WhiteHack - <i class="far fa-copyright"></i> Derechos reservados</p>
+    </div>
+    
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/0b0cc5ebda.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
